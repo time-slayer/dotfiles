@@ -4,5 +4,6 @@ if test -z "$DISPLAY" ;and test "$XDG_VTNR" -eq 1
     exec start-hyprland > ~/.cache/hyprland.log 2>&1
 end
 
-alias p='poweroff'
-alias r='reboot'
+alias p="poweroff"
+alias r="reboot"
+alias dotgit="git --git-dir=$HOME/.dotfiles --work-tree=$HOME"
