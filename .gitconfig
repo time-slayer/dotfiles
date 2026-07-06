@@ -1,0 +1,10 @@
+[user]
+	email = 68065991+time-slayer@users.noreply.github.com
+	name = TimeSlayer
+	signingKey = /home/timeslayer/.ssh/id_ed25519.pub
+[init]
+	defaultBranch = main
+[gpg]
+	format = ssh
+[commit]
+	gpgSign = true
