@@ -46,7 +46,7 @@ Because this repository uses the bare git method, some applications that use ran
 Firefox normally stores configuration in a randomly generated folder (e.g., `txhenf03.default`), which isn't a stable path to track in git. To work around this, a dedicated profile is created at a permanent, tracked location: `~/.config/mozilla/firefox/dotfiles`.
 
 **To set this up:**
-1. Open Firefox and type `about:profiles` in the URL bar.
+1. Open Firefox and go to `about:profiles`.
 2. Click **Create a New Profile** -> **Next**, and name it.
 3. Click **Choose Folder...** and select the tracked directory: `~/.config/mozilla/firefox/dotfiles`.
 4. Finish the wizard, then click **Set as default profile** under the new profile.
