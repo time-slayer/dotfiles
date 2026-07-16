@@ -1,0 +1,14 @@
+/* remove new tab button from sidebar */
+#tabbrowser-tabs[orient="vertical"] #tabs-newtab-button {
+  display: none;
+}
+
+/* remove splitter from sidebar */
+#sidebar-tools-and-extensions-splitter {
+  display: none !important;
+}
+
+/* hide sidebar in fullscreen mode */
+:root[sizemode="fullscreen"] #sidebar-main {
+  visibility: collapse;
+}
