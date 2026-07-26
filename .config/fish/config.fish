@@ -7,3 +7,4 @@ end
 alias p="poweroff"
 alias r="reboot"
 alias dotgit="git --git-dir=$HOME/.dotfiles --work-tree=$HOME"
+alias code="codium"
