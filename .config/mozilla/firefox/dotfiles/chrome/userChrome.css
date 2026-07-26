@@ -8,7 +8,12 @@
   display: none !important;
 }
 
-/* hide sidebar in fullscreen mode */
+/* hide sidebar in fullscreen */
 :root[sizemode="fullscreen"] #sidebar-main {
   visibility: collapse;
+}
+
+/* prevent address bar from showing on hover in fullscreen */
+#fullscr-toggler {
+  display: none !important;
 }
