@@ -10,3 +10,5 @@
 	gpgSign = true
 [fetch]
 	prune = true
+[core]
+	editor = vim
