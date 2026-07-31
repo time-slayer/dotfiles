@@ -41,6 +41,8 @@
   // Files
   "files.insertFinalNewline": false,
   "files.associations": {
+    "*.svg": "html",
+    "*.xml": "html",
     "*.tmpl": "html"
   },
 
