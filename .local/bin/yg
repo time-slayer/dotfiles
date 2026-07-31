@@ -1,0 +1,8 @@
+#!/bin/bash
+
+if [ -z "$1" ]; then
+    echo "Usage: yg <phrase>"
+    exit 1
+fi
+phrase="${*// /_}"
+xdg-open "https://youglish.com/pronounce/$phrase/english"
