@@ -111,5 +111,9 @@
   "[typescriptreact]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
+  "[lua]": {
+    "editor.tabSize": 2,
+    "editor.detectIndentation": false,
+  },
   "js/ts.format.semicolons": "insert"
 }
