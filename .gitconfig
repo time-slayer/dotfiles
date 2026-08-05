@@ -12,3 +12,5 @@
 	prune = true
 [core]
 	editor = vim
+[push]
+	autoSetupRemote = true
