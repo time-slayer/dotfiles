@@ -61,7 +61,6 @@
   },
 
   // Extensions
-  "extensions.autoUpdate": "off",
 
   // Telemetry
   "telemetry.telemetryLevel": "off",
