@@ -12,4 +12,8 @@ hl.config({
       enabled = false,
     }
   },
+
+  ecosystem = {
+    no_donation_nag = true,
+  }
 })

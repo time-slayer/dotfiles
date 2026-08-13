@@ -3,7 +3,5 @@ require("custom.lua.animations")
 require("custom.lua.general")
 require("custom.lua.input")
 require("custom.lua.keybinds")
--- require("custom.lua.layout_profiles")
 require("custom.lua.monitors")
 require("custom.lua.window_rules")
-
