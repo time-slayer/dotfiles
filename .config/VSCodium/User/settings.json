@@ -113,6 +113,7 @@
   "[lua]": {
     "editor.tabSize": 2,
     "editor.detectIndentation": false,
+    "editor.defaultFormatter": "sumneko.lua",
   },
   "js/ts.format.semicolons": "insert"
 }
