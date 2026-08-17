@@ -93,12 +93,17 @@
       "source.organizeImports": "never"
     }
   },
+  "[javascript]": {
+    "editor.defaultFormatter": "vscode.typescript-language-features",
+    "js/ts.format.semicolons": "insert"
+  },
   "[typescript]": {
-    "editor.defaultFormatter": "vscode.typescript-language-features"
+    "editor.defaultFormatter": "vscode.typescript-language-features",
+    "js/ts.format.semicolons": "insert"
   },
   "[jsonc]": {
-    "js/ts.format.semicolons": "insert",
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "js/ts.format.semicolons": "insert"
   },
   "[html]": {
     "editor.tabSize": 2,
@@ -113,7 +118,6 @@
   "[lua]": {
     "editor.tabSize": 2,
     "editor.detectIndentation": false,
-    "editor.defaultFormatter": "sumneko.lua",
-  },
-  "js/ts.format.semicolons": "insert"
+    "editor.defaultFormatter": "sumneko.lua"
+  }
 }
