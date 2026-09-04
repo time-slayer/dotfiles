@@ -1,9 +1,9 @@
 local M = {}
 
 local layout_profiles = {
-  { name = "US, RU",          layout = "us, ru",     variant = "" },
-  { name = "US, RU, UA",      layout = "us, ru, ua", variant = "" },
-  { name = "US, SK", layout = "us, sk",     variant = ", qwerty" }
+  { name = "US, RU",     layout = "us, ru",     variant = "" },
+  { name = "US, RU, UA", layout = "us, ru, ua", variant = "" },
+  { name = "US, SK",     layout = "us, sk",     variant = ", qwerty" }
 }
 
 local current_kb_profile = 1
