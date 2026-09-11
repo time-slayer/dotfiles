@@ -1,5 +1,6 @@
 -- require("./custom/lua/*")
 require("custom.lua.animations")
+require("custom.lua.env")
 require("custom.lua.general")
 require("custom.lua.input")
 require("custom.lua.keybinds")
