@@ -4,5 +4,7 @@ if [ -z "$1" ]; then
     echo "Usage: yg <phrase>"
     exit 1
 fi
-phrase="${*// /_}"
+
+raw_phrase=$*
+phrase="${raw_phrase// /_}"
 xdg-open "https://youglish.com/pronounce/$phrase/english"
