@@ -5,6 +5,6 @@ if [ -z "$1" ]; then
     exit 1
 fi
 
-raw_phrase=$*
+raw_phrase="$*"
 phrase="${raw_phrase// /_}"
 xdg-open "https://youglish.com/pronounce/$phrase/english"
