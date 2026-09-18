@@ -60,8 +60,6 @@
     "https://github.com/": true
   },
 
-  // Extensions
-
   // Telemetry
   "telemetry.telemetryLevel": "off",
 
@@ -74,12 +72,16 @@
   // Chat
   "chat.disableAIFeatures": true,
 
+  // Extensions
   // Catppuccin-icons
   "catppuccin-icons.hidesExplorerArrows": true,
 
   // Prettier
   "prettier.configPath": "",
   "prettier.trailingComma": "none",
+
+  // shfmt
+  "shfmt.executableArgs": ["-ci"],
 
   // Language Settings
   "[python]": {
