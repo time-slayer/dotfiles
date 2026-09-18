@@ -81,7 +81,7 @@
   "prettier.trailingComma": "none",
 
   // shfmt
-  "shfmt.executableArgs": ["-ci"],
+  "shfmt.executableArgs": ["-i", "4", "-ci"],
 
   // Language Settings
   "[python]": {
