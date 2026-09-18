@@ -8,6 +8,7 @@ formulahendry.code-runner
 github.github-vscode-theme
 golang.go
 johnnymorganz.stylua
+mkhl.shfmt
 ms-python.black-formatter
 ms-python.debugpy
 ms-python.pylint
