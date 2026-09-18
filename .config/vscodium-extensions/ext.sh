@@ -15,25 +15,25 @@ EOF
 }
 
 case "$1" in
-    e|export)
+    e | export)
         # check and backup already existing extensions
         if [ -f "$LIST" ]; then
             cp "$LIST" "$BACKUP"
             echo "Backed up previous extensions: $BACKUP"
         fi
 
-        codium --list-extensions > "$LIST"
+        codium --list-extensions >"$LIST"
         echo "Extensions exported: $LIST"
         ;;
 
-    i|import)
+    i | import)
         # check if extensions exists before trying to install
         if [ ! -f "$LIST" ]; then
             echo "Error: extensions list $LIST not found"
             exit 1
         fi
 
-        xargs -n 1 codium --install-extension < "$LIST"
+        xargs -n 1 codium --install-extension <"$LIST"
         ;;
 
     *)
