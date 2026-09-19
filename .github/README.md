@@ -1,10 +1,10 @@
 # My dotfiles
 
-My personal configuration files, tracked with a **bare git repository** — no symlinks, no [Stow](https://www.gnu.org/software/stow), just git managing files directly inside `$HOME`.
+My personal configuration files, tracked with a **bare git repository**.
 
 ## How it works
 
-This repo's git directory lives at `~/.dotfiles`, and its work-tree is `$HOME` itself. That means the files here are checked out at their real, normal paths (e.g. `~/.config/fish`, `~/.gitconfig`) — no symlink indirection required.
+This repo's git directory lives at `~/.dotfiles`, and its work-tree is `$HOME` itself. That means the files here are checked out at their real, normal paths (e.g. `~/.config/fish`, `~/.gitconfig`).
 
 To manage it, I use a shell alias instead of plain `git`:
 
@@ -12,7 +12,7 @@ To manage it, I use a shell alias instead of plain `git`:
 alias dotgit="git --git-dir=$HOME/.dotfiles --work-tree=$HOME"
 ```
 
-Every day-to-day command, like `status`, `add`, `commit`, `push`, `log` — goes through `dotgit` instead of `git`, e.g.:
+And use `dotgit` exactly like `git`:
 
 ```bash
 dotgit status
@@ -39,11 +39,9 @@ dotgit config --local status.showUntrackedFiles no
 
 ## Specific configurations
 
-Because this repository uses the bare git method, some applications that use randomly generated folder names require a tiny bit of manual setup to point them to the correct, tracked files.
-
 ### Firefox `userChrome.css`
 
-Firefox normally stores configuration in a randomly generated folder (e.g., `txhenf03.default`), which isn't a stable path to track in git. To work around this, a dedicated profile is created at a permanent, tracked location: `~/.config/mozilla/firefox/dotfiles`.
+Firefox normally stores configuration in a randomly generated profile folder, which isn't a stable path to track in git. To work around this, a dedicated profile is created at a permanent, tracked location: `~/.config/mozilla/firefox/dotfiles`.
 
 **To set this up:**
 1. Open Firefox and go to `about:profiles`.
