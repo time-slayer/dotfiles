@@ -49,3 +49,17 @@ Firefox normally stores configuration in a randomly generated profile folder, wh
 3. Click **Choose Folder...** and select the tracked directory: `~/.config/mozilla/firefox/dotfiles`.
 4. Finish the wizard, then click **Set as default profile** under the new profile.
 5. Restart Firefox.
+
+### VSCodium extensions
+
+Extensions are managed via custom `ext.sh` script located at `.config/vscodium-extensions/ext.sh`:
+
+```bash
+cd ~/.config/vscodium-extensions
+
+# import and install extension list
+./ext.sh i 
+
+# export installed extensions  
+./ext.sh e
+```
