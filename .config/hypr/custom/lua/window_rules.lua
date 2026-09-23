@@ -1,3 +1,2 @@
-hl.window_rule({ match = { class = "firefox" }, focus_on_activate = true })
-hl.window_rule({ match = { class = "codium" }, focus_on_activate = true })
-hl.window_rule({ match = { class = "osu!" }, focus_on_activate = true })
+local focus_on_active_classes = "^(firefox|codium|osu!)$"
+hl.window_rule({ match = { class = focus_on_active_classes }, focus_on_activate = true })
