@@ -8,8 +8,9 @@ local mainMod = "SUPER"
 -- Programs
 ----------------------------------------------------
 local terminal = "kitty"
+local editor = "zed || zeditor"
 hl.bind(mainMod .. " + RETURN", hl.dsp.exec_cmd(terminal))
-hl.bind(mainMod .. " + C", hl.dsp.exec_cmd("vscodium"))
+hl.bind(mainMod .. " + C", hl.dsp.exec_cmd(editor))
 hl.bind(mainMod .. " + T", hl.dsp.exec_cmd("Telegram"))
 
 
