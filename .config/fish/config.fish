@@ -1,5 +1,5 @@
 # Environment variables
-set -gx EDITOR "zeditor"
+set -gx EDITOR zeditor
 
 # Aliases
 alias p="poweroff"
