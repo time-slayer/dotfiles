@@ -1,9 +1,13 @@
+# Environment variables
+set -gx EDITOR "zeditor"
+
 # Auto start Hyprland on tty1
 if test -z "$DISPLAY"; and test "$XDG_VTNR" -eq 1
     mkdir -p ~/.cache
     exec start-hyprland > ~/.cache/hyprland.log 2>&1
 end
 
+# Aliases
 alias p="poweroff"
 alias r="reboot"
 alias dotgit="git --git-dir=$HOME/.dotfiles --work-tree=$HOME"
