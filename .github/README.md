@@ -2,6 +2,15 @@
 
 My personal configuration files, tracked with a **bare git repository**.
 
+## What's tracked
+
+- [Hyprland](https://github.com/hyprwm/Hyprland)
+- [Fish](https://github.com/fish-shell/fish-shell)
+- [VSCodium](https://github.com/vscodium/vscodium)
+- [Firefox](https://github.com/mozilla-firefox/firefox)
+- [Zed](https://github.com/zed-industries/zed)
+- [Git](https://github.com/git/git)
+
 ## How it works
 
 This repo's git directory lives at `~/.dotfiles`, and its work-tree is `$HOME` itself. That means the files here are checked out at their real, normal paths (e.g. `~/.config/fish`, `~/.gitconfig`).
