@@ -1,10 +1,60 @@
 #!/usr/bin/env bash
 
+accent=""
+
+usage() {
+    cat <<EOF
+Usage: $(basename "$0") [options] <phrase>
+
+Options:
+  -a, --accent {us|uk|aus|all}          specify accent for search (default: all)
+  -h, --help                             show this help
+EOF
+}
+
+while [[ $# -gt 0 ]]; do
+    case "$1" in
+        -a | --accent)
+            if [[ $# -lt 2 ]]; then
+                echo "Error: $1 requires an argument"
+                exit 1
+            fi
+
+            case "$2" in
+                us | uk | aus)
+                    accent="/$2"
+                    shift 2
+                    ;;
+                all)
+                    accent=""
+                    shift 2
+                    ;;
+                *)
+                    echo "Error: invalid accent \"$2\""
+                    exit 1
+                    ;;
+            esac
+            ;;
+
+        -h | --help)
+            usage
+            exit 0
+            ;;
+
+        -* | --*)
+            echo "Error: unknown option \"$1\""
+            exit 1
+            ;;
+
+        *) break ;;
+    esac
+done
+
 if [ -z "$1" ]; then
-    echo "Usage: yg <phrase>"
+    usage
     exit 1
 fi
 
 raw_phrase="$*"
 phrase="${raw_phrase// /_}"
-xdg-open "https://youglish.com/pronounce/$phrase/english"
+xdg-open "https://youglish.com/pronounce/$phrase/english$accent"
