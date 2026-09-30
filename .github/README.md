@@ -58,8 +58,8 @@ Extensions are managed via custom `ext.sh` script located at `.config/vscodium-e
 cd ~/.config/vscodium-extensions
 
 # import and install extension list
-./ext.sh i 
+./ext.sh i
 
-# export installed extensions  
+# export installed extensions
 ./ext.sh e
 ```
