@@ -1,0 +1,21 @@
+[
+  {
+    "context": "Workspace",
+    "bindings": {
+      "ctrl-b": "workspace::ToggleRightDock",
+    },
+  },
+  {
+    "context": "Editor && mode == full",
+    "bindings": {
+      "ctrl-enter": "editor::NewlineBelow",
+      "ctrl-shift-enter": "editor::NewlineAbove",
+    },
+  },
+  {
+    "context": "!Terminal",
+    "bindings": {
+      "ctrl-shift-c": ["task::Spawn", { "task_name": "kitty" }],
+    },
+  },
+]
