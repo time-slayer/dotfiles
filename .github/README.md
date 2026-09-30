@@ -4,12 +4,12 @@ My personal configuration files, tracked with a **bare git repository**.
 
 ## What's tracked
 
-- [Hyprland](https://github.com/hyprwm/Hyprland)
-- [Fish](https://github.com/fish-shell/fish-shell)
-- [VSCodium](https://github.com/vscodium/vscodium)
 - [Firefox](https://github.com/mozilla-firefox/firefox)
-- [Zed](https://github.com/zed-industries/zed)
+- [Fish](https://github.com/fish-shell/fish-shell)
 - [Git](https://github.com/git/git)
+- [Hyprland](https://github.com/hyprwm/Hyprland)
+- [VSCodium](https://github.com/vscodium/vscodium)
+- [Zed](https://github.com/zed-industries/zed)
 
 ## How it works
 
