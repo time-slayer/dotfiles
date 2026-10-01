@@ -7,8 +7,8 @@ usage() {
 Usage: $(basename "$0") [options] <phrase>
 
 Options:
-  -a, --accent {us|uk|aus|all}          specify accent for search (default: all)
-  -h, --help                             show this help
+  -a, --accent {us|uk|aus|all}      specify accent for search (default: all)
+  -h, --help                        show this help
 EOF
 }
 
