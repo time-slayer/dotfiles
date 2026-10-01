@@ -11,7 +11,18 @@ My personal configuration files, tracked with a **bare git repository**.
 - [VSCodium](https://github.com/vscodium/vscodium)
 - [Zed](https://github.com/zed-industries/zed)
 
-## How it works
+## Installation
+
+Clone the repository, then checkout the files:
+> [!WARNING]
+> This will overwrite any existing configs that conflict with the ones tracked here.
+
+```bash
+git clone --bare https://github.com/time-slayer/dotfiles ~/.dotfiles
+git --git-dir=$HOME/.dotfiles --work-tree=$HOME checkout -f
+```
+
+## Usage
 
 This repo's git directory lives at `~/.dotfiles`, and its work-tree is `$HOME` itself. That means the files here are checked out at their real, normal paths (e.g. `~/.config/fish`, `~/.gitconfig`).
 
@@ -25,22 +36,12 @@ And use `dotgit` exactly like `git`:
 
 ```bash
 dotgit status
-dotgit add .config/hyprland
+dotgit add .config/hypr
 dotgit commit -m "tweak hyprland"
 dotgit push
 ```
 
-## Setting up on a new machine
-
-```bash
-# Clone the bare repo
-git clone --bare git@github.com:time-slayer/dotfiles.git ~/.dotfiles
-
-# Set up the dotgit alias, then:
-dotgit checkout
-```
-
-Then hide untracked files from `dotgit status` so it doesn't get noisy with the rest of home directory:
+I also hide untracked files from `dotgit status` so it doesn't get noisy with the rest of my home directory:
 
 ```bash
 dotgit config --local status.showUntrackedFiles no
