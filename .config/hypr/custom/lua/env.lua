@@ -1,0 +1,2 @@
+-- https://wiki.archlinux.org/title/PRIME#NVIDIA
+-- hl.env("__NV_PRIME_RENDER_OFFLOAD", "1")
