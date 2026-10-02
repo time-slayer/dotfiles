@@ -1,4 +1,4 @@
-# My dotfiles
+# dotfiles
 
 My personal configuration files, tracked with a **bare git repository**.
 
@@ -13,7 +13,8 @@ My personal configuration files, tracked with a **bare git repository**.
 
 ## Installation
 
-Clone the repository, then checkout the files:
+Clone the repository and check out the files:
+
 > [!WARNING]
 > This will overwrite any existing configs that conflict with the ones tracked here.
 
@@ -54,6 +55,7 @@ dotgit config --local status.showUntrackedFiles no
 Firefox normally stores configuration in a randomly generated profile folder, which isn't a stable path to track in git. To work around this, a dedicated profile is created at a permanent, tracked location: `~/.config/mozilla/firefox/dotfiles`.
 
 **To set this up:**
+
 1. Open Firefox and go to `about:profiles`.
 2. Click **Create a New Profile** -> **Next**, and name it.
 3. Click **Choose Folder...** and select the tracked directory: `~/.config/mozilla/firefox/dotfiles`.
@@ -62,12 +64,12 @@ Firefox normally stores configuration in a randomly generated profile folder, wh
 
 ### VSCodium extensions
 
-Extensions are managed via custom `ext.sh` script located at `.config/vscodium-extensions/ext.sh`:
+Extensions are managed via a custom `ext.sh` script located at `.config/vscodium-extensions/ext.sh`:
 
 ```bash
 cd ~/.config/vscodium-extensions
 
-# import and install extension list
+# install extension list
 ./ext.sh i
 
 # export installed extensions
