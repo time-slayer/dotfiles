@@ -22,7 +22,7 @@ while [[ $# -gt 0 ]]; do
 
             case "$2" in
                 us | uk | aus)
-                    accent="/$2"
+                    accent="$2"
                     shift 2
                     ;;
                 all)
@@ -34,6 +34,16 @@ while [[ $# -gt 0 ]]; do
                     exit 1
                     ;;
             esac
+            ;;
+
+        --us | --uk | --aus)
+            accent=${1#--}
+            shift
+            ;;
+
+        --all)
+            accent=""
+            shift
             ;;
 
         -h | --help)
@@ -57,4 +67,10 @@ fi
 
 raw_phrase="$*"
 phrase="${raw_phrase// /_}"
-xdg-open "https://youglish.com/pronounce/$phrase/english$accent"
+yg_url="https://youglish.com/pronounce/$phrase/english"
+
+if [ -n "$accent" ]; then
+    yg_url+="/$accent"
+fi
+
+xdg-open "$yg_url"
