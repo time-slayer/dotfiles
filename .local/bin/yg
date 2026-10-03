@@ -45,7 +45,7 @@ while [[ $# -gt 0 ]]; do
             ;;
 
         -* | --*)
-            echo "Error: unknown option \"$1\""
+            echo "Error: unknown option '$1'"
             exit 1
             ;;
 
