@@ -1,6 +1,6 @@
-/* remove new tab button from sidebar */
+/* remove "new tab" button from sidebar */
 #tabbrowser-tabs[orient="vertical"] #tabs-newtab-button {
-  display: none;
+  display: none !important;
 }
 
 /* remove splitter from sidebar */
@@ -8,12 +8,20 @@
   display: none !important;
 }
 
-/* hide sidebar in fullscreen */
-:root[sizemode="fullscreen"] #sidebar-main {
-  visibility: collapse;
+/*
+ * prevent toolbar from showing on top-edge hover in fullscreen
+ * NOTE: no longer hides the vertical sidebar as of Firefox 157
+ */
+#fullscr-toggler {
+  display: none !important;
 }
 
-/* prevent address bar from showing on hover in fullscreen */
-#fullscr-toggler {
+/*
+ * hide sidebar and nav toolbox in fullscreen.
+ * NOTE: requires `browser.fullscreen.autohide` to be `false`
+ * to prevent a small layout shift when hovering over the top edge
+ */
+:root[sizemode="fullscreen"] toolbox#navigator-toolbox,
+:root[sizemode="fullscreen"] sidebar-main {
   display: none !important;
 }
