@@ -16,11 +16,7 @@
   display: none !important;
 }
 
-/*
- * hide sidebar and nav toolbox in fullscreen.
- * NOTE: requires `browser.fullscreen.autohide` to be `false`
- * to prevent a small layout shift when hovering over the top edge
- */
+/* hide sidebar and nav toolbox in fullscreen */
 :root[sizemode="fullscreen"] toolbox#navigator-toolbox,
 :root[sizemode="fullscreen"] sidebar-main {
   display: none !important;
