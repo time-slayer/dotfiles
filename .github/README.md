@@ -50,7 +50,7 @@ dotgit config --local status.showUntrackedFiles no
 
 ## Specific configurations
 
-### Firefox `userChrome.css`
+### Firefox
 
 Firefox normally stores configuration in a randomly generated profile folder, which isn't a stable path to track in git. To work around this, a dedicated profile is created at a permanent, tracked location: `~/.config/mozilla/firefox/dotfiles`.
 
