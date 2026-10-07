@@ -1,5 +1,7 @@
 # dotfiles
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+
 My personal configuration files, tracked with a **bare git repository**.
 
 ## What's tracked
