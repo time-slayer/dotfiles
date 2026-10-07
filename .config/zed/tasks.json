@@ -1,0 +1,10 @@
+[
+  {
+    "label": "kitty",
+    "command": "kitty",
+    "args": ["--detach"],
+    "allow_concurrent_runs": true,
+    "reveal": "never",
+    "hide": "always",
+  },
+]
