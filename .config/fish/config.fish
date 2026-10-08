@@ -17,6 +17,7 @@ abbr ga "git add"
 abbr gaa "git add --all"
 
 # --- Commit ---
+abbr gc "git commit --message"
 abbr gc! "git commit --amend"
 abbr gca "git commit --all --message"
 abbr gca! "git commit --all --amend"
