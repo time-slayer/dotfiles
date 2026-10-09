@@ -30,8 +30,9 @@ abbr gcmsg "git commit --message"
 
 # --- Diff ---
 abbr gd "git diff"
-abbr gds "git diff --staged"
-abbr gdst "git diff --stat"
+abbr gdc "git diff --cached"
+abbr gds "git diff --stat"
+abbr gdcs "git diff --cached --stat"
 
 # --- Log ---
 abbr glg "git log --stat"
