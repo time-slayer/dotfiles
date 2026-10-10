@@ -39,6 +39,11 @@ abbr glg "git log --stat"
 abbr glgo "git log --oneline"
 abbr glo "git log --oneline"
 
+# --- Push ---
+abbr gp "git push"
+abbr gpf "git push --force-with-lease"
+abbr gpf! "git push --force"
+
 # --- Status ---
 abbr gss "git status --short"
 abbr gst "git status"
