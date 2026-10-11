@@ -27,6 +27,7 @@ abbr gcan! "git commit --all --no-edit --amend"
 abbr gcm "git commit --message"
 abbr gcm! "git commit --amend --message"
 abbr gcmsg "git commit --message"
+abbr gcn! "git commit --no-edit --amend"
 
 # --- Diff ---
 abbr gd "git diff"
