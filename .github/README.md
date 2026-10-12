@@ -10,6 +10,7 @@ My personal configuration files, tracked with a **bare git repository**.
 - [Fish](https://github.com/fish-shell/fish-shell)
 - [Git](https://github.com/git/git)
 - [Hyprland](https://github.com/hyprwm/Hyprland)
+- [mpv](https://github.com/mpv-player/mpv)
 - [VSCodium](https://github.com/vscodium/vscodium)
 - [Zed](https://github.com/zed-industries/zed)
 
