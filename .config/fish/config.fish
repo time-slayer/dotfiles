@@ -36,9 +36,11 @@ abbr gds "git diff --stat"
 abbr gdcs "git diff --cached --stat"
 
 # --- Log ---
-abbr glg "git log --stat"
+abbr glg "git log"
 abbr glgo "git log --oneline"
+abbr glgs "git log --stat"
 abbr glo "git log --oneline"
+abbr gls "git log --stat"
 
 # --- Push ---
 abbr gp "git push"
