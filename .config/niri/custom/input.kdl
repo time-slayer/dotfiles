@@ -1,0 +1,11 @@
+input {
+    keyboard {
+        xkb {
+            layout "us,ru"
+        }
+    }
+
+    mouse {
+        accel-profile "flat"
+    }
+}
