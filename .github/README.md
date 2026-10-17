@@ -6,6 +6,7 @@ My personal configuration files, tracked with a **bare git repository**.
 
 ## What's tracked
 
+- [Alacritty](https://github.com/alacritty/alacritty)
 - [Firefox](https://github.com/mozilla-firefox/firefox)
 - [Fish](https://github.com/fish-shell/fish-shell)
 - [Git](https://github.com/git/git)
