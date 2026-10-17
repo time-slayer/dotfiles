@@ -4,7 +4,7 @@ binds {
     Mod+T { spawn "alacritty"; }
     Mod+B { spawn "firefox"; }
     Mod+C { spawn "zeditor"; }
-    Mod+E { spawn "thunar"; }
+    Mod+E { spawn "nautilus" "-w"; }
 
     // Window managment
     Mod+W { toggle-window-floating; }
