@@ -6,7 +6,10 @@ binds {
     Mod+C { spawn "zeditor"; }
     Mod+E { spawn "thunar"; }
 
+    // Window managment
+    Mod+W { toggle-window-floating; }
+    Mod+Shift+W { switch-focus-between-floating-and-tiling; }
+
+    // Keyboard layout
     Mod+Space { switch-layout "next"; }
-    // Mod+Up { focus-workspace-up; }
-    // Mod+Down { focus-workspace-down; }
 }
