@@ -2,3 +2,11 @@ window-rule {
     match app-id="firefox"
     open-maximized true
 }
+
+window-rule {
+    opacity 0.95
+    background-effect {
+        blur true
+        xray false
+    }
+}
