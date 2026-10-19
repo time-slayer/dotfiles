@@ -1,5 +1,10 @@
+[general]
+import = [
+  "dms.toml",
+]
+
 [window]
-decorations = "none"
+decorations = "None"
 padding = { x = 20, y = 20 }
 
 [font]
