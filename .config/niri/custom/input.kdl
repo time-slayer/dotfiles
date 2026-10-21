@@ -8,4 +8,11 @@ input {
     mouse {
         accel-profile "flat"
     }
+
+    touchpad {
+        tap
+        natural-scroll
+        accel-profile "flat"
+        scroll-factor 0.3
+    }
 }
