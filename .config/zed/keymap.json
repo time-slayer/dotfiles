@@ -15,7 +15,7 @@
   {
     "context": "!Terminal",
     "bindings": {
-      "ctrl-shift-c": ["task::Spawn", { "task_name": "kitty" }],
+      "ctrl-shift-c": ["task::Spawn", { "task_name": "alacritty" }],
     },
   },
 ]

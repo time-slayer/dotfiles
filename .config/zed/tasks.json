@@ -1,8 +1,7 @@
 [
   {
-    "label": "kitty",
-    "command": "kitty",
-    "args": ["--detach"],
+    "label": "alacritty",
+    "command": "setsid -f alacritty &>/dev/null",
     "allow_concurrent_runs": true,
     "reveal": "never",
     "hide": "always",
