@@ -1,3 +1,4 @@
 layout {
+    gaps 8
     default-column-width { proportion 0.5; }
 }
