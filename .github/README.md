@@ -12,6 +12,7 @@ My personal configuration files, tracked with a **bare git repository**.
 - [Git](https://github.com/git/git)
 - [Hyprland](https://github.com/hyprwm/Hyprland)
 - [mpv](https://github.com/mpv-player/mpv)
+- [Neovim](https://github.com/neovim/neovim)
 - [niri](https://github.com/niri-wm/niri)
 - [VSCodium](https://github.com/vscodium/vscodium)
 - [Zed](https://github.com/zed-industries/zed)
