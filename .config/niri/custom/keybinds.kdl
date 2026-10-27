@@ -9,7 +9,7 @@ binds {
     // === Keyboard layout ===
     Mod+Space { switch-layout "next"; }
 
-    // === Floating Windows ===
+    // === Floating window ===
     Mod+W       { toggle-window-floating; }
     Mod+Shift+W { switch-focus-between-floating-and-tiling; }
 
