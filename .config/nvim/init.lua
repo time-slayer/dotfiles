@@ -171,6 +171,9 @@ end
 -- SECTION 3: PLUGIN MANAGER INTRO
 -- vim.pack intro, build hooks
 -- ============================================================
+-- Plugins
+require 'plugins.navigation'
+require 'plugins.ui'
 do
   -- [[ Intro to `vim.pack` ]]
   -- `vim.pack` is a new plugin manager built into Neovim,
@@ -244,7 +247,6 @@ local function gh(repo) return 'https://github.com/' .. repo end
 -- guess-indent, gitsigns, which-key, colorscheme, todo-comments, mini modules
 -- ============================================================
 do
-  require 'plugins.ui'
   vim.pack.add { gh 'lambdalisue/vim-suda' }
 
   -- [[ Installing and Configuring Plugins ]]
