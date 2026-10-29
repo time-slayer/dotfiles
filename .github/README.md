@@ -84,7 +84,7 @@ cd ~/.config/vscodium-extensions
 
 ### Niri
 
-Since I'm experimenting with niri, I don't track the default config file. Instead, all custom configs need to be include in `config.kdl`:
+Since I'm experimenting with niri, I don't track the default config file. Instead, all custom configs need to be included in `config.kdl`:
 
 ```kdl
 include "custom/init.kdl"
