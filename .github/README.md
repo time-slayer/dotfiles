@@ -58,7 +58,7 @@ dotgit config --local status.showUntrackedFiles no
 
 ### Firefox
 
-Firefox normally stores configuration in a randomly generated profile folder, which isn't a stable path to track in git. To work around this, a dedicated profile is created at a permanent, tracked location: `~/.config/mozilla/firefox/dotfiles`.
+Firefox normally stores configuration in a randomly generated profile folder, which isn't a stable path to track in git. To work around this, a dedicated profile is created at a permanent, tracked location: [`~/.config/mozilla/firefox/dotfiles`](../.config/mozilla/firefox/dotfiles).
 
 **To set this up:**
 
@@ -70,7 +70,7 @@ Firefox normally stores configuration in a randomly generated profile folder, wh
 
 ### VSCodium extensions
 
-Extensions are managed via a custom `ext.sh` script located at `.config/vscodium-extensions/ext.sh`:
+Extensions are managed via a custom `ext.sh` script located at [`.config/vscodium-extensions/ext.sh`](../.config/vscodium-extensions/ext.sh):
 
 ```bash
 cd ~/.config/vscodium-extensions
