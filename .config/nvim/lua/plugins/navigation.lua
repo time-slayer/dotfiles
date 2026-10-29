@@ -4,7 +4,10 @@ vim.pack.add {
   "https://github.com/mikavilpas/yazi.nvim",
 }
 
+vim.g.loaded_netrw = 1
+vim.g.loaded_netrwPlugin = 1
+
 local yazi = require "yazi"
-yazi.setup {}
+yazi.setup { open_for_directories = true }
 
 vim.keymap.set("n", "<leader>-", yazi.yazi, { desc = "Open yazi at current file" })
