@@ -223,7 +223,9 @@ do
       end
 
       if name == "LuaSnip" then
-        if vim.fn.has "win32" ~= 1 and vim.fn.executable "make" == 1 then run_build(name, { "make", "install_jsregexp" }, ev.data.path) end
+        if vim.fn.has "win32" ~= 1 and vim.fn.executable "make" == 1 then
+          run_build(name, { "make", "install_jsregexp" }, ev.data.path)
+        end
         return
       end
 
@@ -299,23 +301,68 @@ do
       end, { desc = "Jump to previous git [c]hange", buf = bufnr })
 
       -- Visual mode actions
-      vim.keymap.set("v", "<leader>hs", function() gitsigns.stage_hunk { vim.fn.line ".", vim.fn.line "v" } end, { desc = "git [s]tage hunk", buf = bufnr })
-      vim.keymap.set("v", "<leader>hr", function() gitsigns.reset_hunk { vim.fn.line ".", vim.fn.line "v" } end, { desc = "git [r]eset hunk", buf = bufnr })
+      vim.keymap.set(
+        "v",
+        "<leader>hs",
+        function() gitsigns.stage_hunk { vim.fn.line ".", vim.fn.line "v" } end,
+        { desc = "git [s]tage hunk", buf = bufnr }
+      )
+      vim.keymap.set(
+        "v",
+        "<leader>hr",
+        function() gitsigns.reset_hunk { vim.fn.line ".", vim.fn.line "v" } end,
+        { desc = "git [r]eset hunk", buf = bufnr }
+      )
       -- Normal mode actions
       vim.keymap.set("n", "<leader>hs", gitsigns.stage_hunk, { desc = "git [s]tage hunk", buf = bufnr })
       vim.keymap.set("n", "<leader>hr", gitsigns.reset_hunk, { desc = "git [r]eset hunk", buf = bufnr })
       vim.keymap.set("n", "<leader>hS", gitsigns.stage_buffer, { desc = "git [S]tage buffer", buf = bufnr })
       vim.keymap.set("n", "<leader>hR", gitsigns.reset_buffer, { desc = "git [R]eset buffer", buf = bufnr })
       vim.keymap.set("n", "<leader>hp", gitsigns.preview_hunk, { desc = "git [p]review hunk", buf = bufnr })
-      vim.keymap.set("n", "<leader>hi", gitsigns.preview_hunk_inline, { desc = "git preview hunk [i]nline", buf = bufnr })
-      vim.keymap.set("n", "<leader>hb", function() gitsigns.blame_line { full = true } end, { desc = "git [b]lame line", buf = bufnr })
+      vim.keymap.set(
+        "n",
+        "<leader>hi",
+        gitsigns.preview_hunk_inline,
+        { desc = "git preview hunk [i]nline", buf = bufnr }
+      )
+      vim.keymap.set(
+        "n",
+        "<leader>hb",
+        function() gitsigns.blame_line { full = true } end,
+        { desc = "git [b]lame line", buf = bufnr }
+      )
       vim.keymap.set("n", "<leader>hd", gitsigns.diffthis, { desc = "git [d]iff against index", buf = bufnr })
-      vim.keymap.set("n", "<leader>hD", function() gitsigns.diffthis "~" end, { desc = "git [D]iff against last commit", buf = bufnr })
-      vim.keymap.set("n", "<leader>hQ", function() gitsigns.setqflist "all" end, { desc = "git hunk [Q]uickfix list (all files in repo)", buf = bufnr })
-      vim.keymap.set("n", "<leader>hq", gitsigns.setqflist, { desc = "git hunk [q]uickfix list (all changes in this file)", buf = bufnr })
+      vim.keymap.set(
+        "n",
+        "<leader>hD",
+        function() gitsigns.diffthis "~" end,
+        { desc = "git [D]iff against last commit", buf = bufnr }
+      )
+      vim.keymap.set(
+        "n",
+        "<leader>hQ",
+        function() gitsigns.setqflist "all" end,
+        { desc = "git hunk [Q]uickfix list (all files in repo)", buf = bufnr }
+      )
+      vim.keymap.set(
+        "n",
+        "<leader>hq",
+        gitsigns.setqflist,
+        { desc = "git hunk [q]uickfix list (all changes in this file)", buf = bufnr }
+      )
       -- Toggles
-      vim.keymap.set("n", "<leader>tb", gitsigns.toggle_current_line_blame, { desc = "[T]oggle git show [b]lame line", buf = bufnr })
-      vim.keymap.set("n", "<leader>tw", gitsigns.toggle_word_diff, { desc = "[T]oggle git intra-line [w]ord diff", buf = bufnr })
+      vim.keymap.set(
+        "n",
+        "<leader>tb",
+        gitsigns.toggle_current_line_blame,
+        { desc = "[T]oggle git show [b]lame line", buf = bufnr }
+      )
+      vim.keymap.set(
+        "n",
+        "<leader>tw",
+        gitsigns.toggle_word_diff,
+        { desc = "[T]oggle git intra-line [w]ord diff", buf = bufnr }
+      )
       -- Text object
       vim.keymap.set({ "o", "x" }, "ih", gitsigns.select_hunk, { desc = "text object [i]nside [h]unk", buf = bufnr })
     end,
@@ -412,7 +459,9 @@ do
     gh "nvim-telescope/telescope.nvim",
     gh "nvim-telescope/telescope-ui-select.nvim",
   }
-  if vim.fn.executable "make" == 1 then table.insert(telescope_plugins, gh "nvim-telescope/telescope-fzf-native.nvim") end
+  if vim.fn.executable "make" == 1 then
+    table.insert(telescope_plugins, gh "nvim-telescope/telescope-fzf-native.nvim")
+  end
 
   -- NOTE: You can install multiple plugins at once
   vim.pack.add(telescope_plugins)
@@ -476,7 +525,12 @@ do
 
       -- Fuzzy find all the symbols in your current workspace.
       -- Similar to document symbols, except searches over your entire project.
-      vim.keymap.set("n", "gW", builtin.lsp_dynamic_workspace_symbols, { buffer = buf, desc = "Open Workspace Symbols" })
+      vim.keymap.set(
+        "n",
+        "gW",
+        builtin.lsp_dynamic_workspace_symbols,
+        { buffer = buf, desc = "Open Workspace Symbols" }
+      )
 
       -- Jump to the type of the word under your cursor.
       -- Useful when you're not sure what type a variable is and you want to see
@@ -509,7 +563,12 @@ do
   )
 
   -- Shortcut for searching your Neovim configuration files
-  vim.keymap.set("n", "<leader>sn", function() builtin.find_files { cwd = vim.fn.stdpath "config", follow = true } end, { desc = "[S]earch [N]eovim files" })
+  vim.keymap.set(
+    "n",
+    "<leader>sn",
+    function() builtin.find_files { cwd = vim.fn.stdpath "config", follow = true } end,
+    { desc = "[S]earch [N]eovim files" }
+  )
 end
 
 -- ============================================================
@@ -610,7 +669,11 @@ do
       --
       -- This may be unwanted, since they displace some of your code
       if client and client:supports_method("textDocument/inlayHint", event.buf) then
-        map("<leader>th", function() vim.lsp.inlay_hint.enable(not vim.lsp.inlay_hint.is_enabled { bufnr = event.buf }) end, "[T]oggle Inlay [H]ints")
+        map(
+          "<leader>th",
+          function() vim.lsp.inlay_hint.enable(not vim.lsp.inlay_hint.is_enabled { bufnr = event.buf }) end,
+          "[T]oggle Inlay [H]ints"
+        )
       end
     end,
   })
@@ -640,7 +703,12 @@ do
 
         if client.workspace_folders then
           local path = client.workspace_folders[1].name
-          if path ~= vim.fn.stdpath "config" and (vim.uv.fs_stat(path .. "/.luarc.json") or vim.uv.fs_stat(path .. "/.luarc.jsonc")) then return end
+          if
+            path ~= vim.fn.stdpath "config"
+            and (vim.uv.fs_stat(path .. "/.luarc.json") or vim.uv.fs_stat(path .. "/.luarc.jsonc"))
+          then
+            return
+          end
         end
 
         local current_settings = client.config.settings --[[@as lspconfig.settings.lua_ls]]
@@ -736,7 +804,12 @@ do
     },
   }
 
-  vim.keymap.set({ "n", "v" }, "<leader>f", function() require("conform").format { async = true } end, { desc = "[F]ormat buffer" })
+  vim.keymap.set(
+    { "n", "v" },
+    "<leader>f",
+    function() require("conform").format { async = true } end,
+    { desc = "[F]ormat buffer" }
+  )
 end
 
 -- ============================================================
@@ -835,7 +908,8 @@ do
   vim.pack.add { { src = gh "nvim-treesitter/nvim-treesitter", version = "main" } }
 
   -- Ensure basic parsers are installed
-  local parsers = { "bash", "c", "diff", "html", "lua", "luadoc", "markdown", "markdown_inline", "query", "vim", "vimdoc" }
+  local parsers =
+    { "bash", "c", "diff", "html", "lua", "luadoc", "markdown", "markdown_inline", "query", "vim", "vimdoc" }
   require("nvim-treesitter").install(parsers)
 
   ---@param buf integer
