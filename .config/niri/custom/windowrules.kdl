@@ -10,3 +10,8 @@ window-rule {
         xray false
     }
 }
+
+window-rule {
+    match app-id=r#"^org\.telegram\.desktop$"# title="^Media viewer$"
+    on-xdg-activate "ignore"
+}
