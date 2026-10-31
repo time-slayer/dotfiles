@@ -1,7 +1,7 @@
 # ==============================
 # Environment variables
 # ==============================
-set -gx EDITOR nvim
+set -Ux EDITOR nvim
 
 # ==============================
 # Abbreviations
