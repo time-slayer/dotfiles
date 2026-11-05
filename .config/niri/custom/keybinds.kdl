@@ -1,13 +1,13 @@
 binds {
     // === Applications ===
-    Mod+Return { spawn "alacritty"; }
-    Mod+T { spawn "alacritty"; }
-    Mod+B { spawn "firefox"; }
-    Mod+Z { spawn "zeditor"; }
-    Mod+E { spawn "nautilus" "-w"; }
+    Mod+Return repeat=false { spawn "alacritty"; }
+    Mod+T repeat=false { spawn "alacritty"; }
+    Mod+B repeat=false { spawn "firefox"; }
+    Mod+Z repeat=false { spawn "zeditor"; }
+    Mod+E repeat=false { spawn "nautilus" "-w"; }
 
     // === Keyboard layout ===
-    Mod+Space { switch-layout "next"; }
+    Mod+Space repeat=false { switch-layout "next"; }
 
     // === Floating window ===
     Mod+W       { toggle-window-floating; }
