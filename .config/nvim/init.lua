@@ -151,6 +151,9 @@ do
   -- vim.keymap.set("n", "<C-S-j>", "<C-w>J", { desc = "Move window to the lower" })
   -- vim.keymap.set("n", "<C-S-k>", "<C-w>K", { desc = "Move window to the upper" })
 
+  vim.keymap.set("n", "<A-j>", "<cmd>m .+1<cr>==")
+  vim.keymap.set("n", "<A-k>", "<cmd>m .-2<cr>==")
+
   -- [[ Basic Autocommands ]]
   --  See `:help lua-guide-autocommands`
 
