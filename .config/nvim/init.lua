@@ -471,9 +471,9 @@ do
 
   vim.keymap.set(
     { "n", "v" },
-    "<leader>f",
+    "<leader>cf",
     function() require("conform").format { async = true } end,
-    { desc = "[F]ormat buffer" }
+    { desc = "Format buffer" }
   )
 end
 
