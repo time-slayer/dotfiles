@@ -16,11 +16,11 @@ abbr in "paru -S"
 abbr un "paru -Rns"
 
 # --- Git (Oh My Zsh style) ---
-# --- Add ---
+# Add
 abbr ga "git add"
 abbr gaa "git add --all"
 
-# --- Commit ---
+# Commit
 abbr gc "git commit --message"
 abbr gc! "git commit --amend"
 abbr gca "git commit --all --message"
@@ -33,25 +33,25 @@ abbr gcm! "git commit --amend --message"
 abbr gcmsg "git commit --message"
 abbr gcn! "git commit --no-edit --amend"
 
-# --- Diff ---
+# Diff
 abbr gd "git diff"
 abbr gdc "git diff --cached"
 abbr gds "git diff --stat"
 abbr gdcs "git diff --cached --stat"
 
-# --- Log ---
+# Log
 abbr glg "git log"
 abbr glgo "git log --oneline"
 abbr glgs "git log --stat"
 abbr glo "git log --oneline"
 abbr gls "git log --stat"
 
-# --- Push ---
+# Push
 abbr gp "git push"
 abbr gpf "git push --force-with-lease"
 abbr gpf! "git push --force"
 
-# --- Status ---
+# Status
 abbr gss "git status --short"
 abbr gst "git status"
 abbr gsts "git status --short"
