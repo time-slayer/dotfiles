@@ -11,6 +11,10 @@ set -Ux EDITOR nvim
 abbr p poweroff
 abbr r reboot
 
+# --- Package managment ---
+abbr in "paru -S"
+abbr un "paru -Rns"
+
 # --- Git (Oh My Zsh style) ---
 # --- Add ---
 abbr ga "git add"
