@@ -6,14 +6,15 @@ set -Ux EDITOR nvim
 # ==============================
 # Abbreviations
 # ==============================
-
-# --- System ---
+# --- General ---
 abbr p poweroff
 abbr r reboot
 
-# --- Package managment ---
+# --- Package management ---
 abbr in "paru -S"
 abbr un "paru -Rns"
+abbr up "paru -Syu"
+abbr clean "paru -Scc"
 
 # --- Git (Oh My Zsh style) ---
 # Add
